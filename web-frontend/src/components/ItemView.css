@@ -1,0 +1,36 @@
+.itemContainer{
+    height: 80vh;
+    width: 30vw;
+    padding: 1rem;
+    background-color: #f6f6f6;
+    gap:.5rem;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    border-radius: 10px;
+}
+
+.itemContainer::-webkit-scrollbar{
+    display: none;
+}
+
+.addItem {
+    height: 4rem;
+    width: 4rem;
+    flex-shrink: 0;
+    background-color: rgb(62, 125, 220);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    position: sticky; 
+    bottom: .5rem;
+    left: 100%;
+    margin-top: auto;  
+    border-radius: 50%;
+    font-weight: 900;
+    font-size: 2rem;
+    cursor: pointer;
+    z-index: 10;
+}

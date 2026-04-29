@@ -1,0 +1,17 @@
+.adminPannel{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+}
+
+.bottom{
+    height: 90vh;
+    width: 100vw;
+    display: flex;
+    justify-content: space-evenly;
+    overflow: hidden;
+    align-items: center;
+    background-color: white;
+
+}

@@ -1,0 +1,33 @@
+.navbar{
+    height: 10vh;
+    width: 100vw;
+    padding: 1rem 2rem;
+    background-color: #f6f6f6;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.leftNav{
+    position: relative;
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    font-family: "Dancing Script", cursive;
+    font-weight: 900;
+    color: #A21E2B;
+    font-size: 1.3rem;
+}
+
+.rightNav button{
+    background-color: #A21E2B;
+    border: none;
+}
+
+img{
+    height: 3.5rem;
+    width: 3.5rem;
+}
