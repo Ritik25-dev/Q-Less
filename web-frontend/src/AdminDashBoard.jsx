@@ -1,4 +1,4 @@
-import './AdminDashboard.css';
+import './AdminDashBoard.css';
 import DeliveredView from './components/DeliveredView';
 import Pendingview from './components/Pendingview';
 import ReadyView from './components/ReadyView';
