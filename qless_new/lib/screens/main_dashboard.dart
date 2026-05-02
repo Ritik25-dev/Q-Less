@@ -4,7 +4,6 @@ import '../providers/food_provider.dart';
 import '../providers/cart_provider.dart';
 import 'checkout_screen.dart'; // <-- Added import for the Checkout Screen
 import '../providers/order_provider.dart';
-import 'package:intl/intl.dart';
 import '../providers/auth_provider.dart';
 
 // --- MAIN DASHBOARD (NAVIGATION) ---
