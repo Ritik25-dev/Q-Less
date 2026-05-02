@@ -1,5 +1,4 @@
 import express from 'express';
-import FoodItem from '../models/FoodItem.js';
 import { addItems, deleteItem, getItem } from '../controller/itemController.js';
 import KitchenStatus from '../models/kitchenStatus.js';
 import { verifyJwt } from '../middleware/authMiddleware.js';
