@@ -1,5 +1,5 @@
 import Admin from "../models/admin.js";
-import FoodItem from "../models/FoodItem.js";
+import FoodItem from "../models/foodItem.js";
 
 
 export const addItems = async (req,res) => {

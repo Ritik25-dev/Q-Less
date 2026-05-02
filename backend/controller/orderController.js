@@ -1,5 +1,5 @@
 import KitchenStatus from '../models/kitchenStatus.js';
-import Order from '../models/Order.js';
+import Order from '../models/order.js';
 import User from '../models/user.js';
 
 export const placeOrder = async (req, res) => {
