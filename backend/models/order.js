@@ -1,23 +1,17 @@
 import mongoose from 'mongoose';
 
 const orderSchema = new mongoose.Schema({
-  orderNo:{
-    type: String, 
-    required
-  },
-  studentId:{
-    type: mongoose.Schema.Types.ObjectId,
-    ref:'User'
-  },
+  userId:{type:mongoose.Schema.Types.ObjectId, ref: 'User'},
+  orderNo:Number,
   items: [{
-    type: mongoose.Schema.Types.ObjectId,
-    ref: 'FoodItem'
+    foodId: { type: mongoose.Schema.Types.ObjectId, ref: 'FoodItem' },
+    quantity: Number,
+    price: Number,
+    itemTotal: Number 
   }],
-  status: { 
-    type: String, 
-    default: 'pending' 
-  },
-  createdAt: { type: Date, default: Date.now }
+  totalAmount: { type: Number, required: true },
+  status: { type: String, default: 'Pending' },
+  createdAt: {type:Date, default: Date.now}
 });
 
 const Order = mongoose.model('Order', orderSchema);

@@ -5,6 +5,7 @@ import App from './App.jsx'
 import { ToastContainer } from 'react-toastify'
 import 'react-toastify/dist/ReactToastify.css';
 
+
 const ResponsiveToast = () => {
   const [isMobile, setIsMobile] = useState(window.innerWidth < 768);
 

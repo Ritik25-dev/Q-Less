@@ -1,0 +1,31 @@
+name: qless
+description: Q-less smart canteen user app.
+publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+
+environment:
+  sdk: '>=3.0.0 <4.0.0' # This tells Flutter you are using modern, null-safe Dart
+
+dependencies:
+  flutter:
+    sdk: flutter
+  
+  # State Management
+  provider: ^6.1.2
+  
+  # API & Networking
+  http: ^1.2.0
+  socket_io_client: ^2.0.3
+  flutter_local_notifications: ^17.0.0
+  
+  # Local Storage & Auth
+  shared_preferences: ^2.2.2
+  flutter_secure_storage: ^9.0.0
+  intl: ^0.20.2
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^4.0.0
+
+flutter:
+  uses-material-design: true

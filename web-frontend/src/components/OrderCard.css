@@ -1,0 +1,114 @@
+.orderCard {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  border-radius: 12px;
+  background-color: #ffffff;
+  border: 1px solid #eee;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+  font-family: 'DM Sans', sans-serif;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  min-width: 280px;
+}
+
+.orderCard:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+}
+
+
+.orderHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+  border-bottom: 1px solid #f0f0f0;
+  padding-bottom: 10px;
+}
+
+.orderNo {
+  font-size: 0.85rem;
+  color: #666;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+
+.orderBody {
+  margin-bottom: 16px;
+}
+
+.foodItem {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 4px 0;
+}
+
+.foodName {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #2d3436;
+}
+
+.foodQty {
+  font-size: 0.9rem;
+  color: #888;
+  background: #f1f1f1;
+  padding: 2px 8px;
+  border-radius: 12px;
+}
+
+.orderFooter {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: auto;
+}
+
+.orderPrice {
+  font-size: 1.25rem;
+  font-weight: 800;
+  color: #2d3436;
+  margin: 0;
+}
+
+.statusBadge {
+  font-size: 0.75rem;
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.statusBadge.pending {
+  background-color: #fff9db;
+  color: #f59f00;
+}
+
+.statusBadge.delivered {
+  background-color: #ebfbee;
+  color: #40c057;
+}
+
+.statusBadge.ready {
+  background-color: #ebfbee;
+  color: #40c057;
+}
+
+.statusBtn{
+  background-color: #f6f6f6;
+  font-size: .9rem;
+  padding: .3rem .7rem;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.Pending{
+  color: #40c057;
+}
+
+.Ready{
+  color: #f59f00;
+}

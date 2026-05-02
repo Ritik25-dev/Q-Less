@@ -3,11 +3,17 @@ import mongoose from "mongoose";
 const adminSchema = new mongoose.Schema({
     email:{
         type:String,
-        required
+        required:true
     },
     password:{
         type:String,
-        required
+        required:true
+    },
+    refreshToken:{
+        type:String
+    },
+    role:{
+        type:String
     }
 })
 

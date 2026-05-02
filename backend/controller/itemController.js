@@ -1,10 +1,15 @@
+import Admin from "../models/admin.js";
 import FoodItem from "../models/FoodItem.js";
 
 
 export const addItems = async (req,res) => {
     try{
         const data = req.body;
+        const admin = req.admin;
 
+        const AdminRole = await Admin.findById(admin._id).role
+
+        if(AdminRole !== 'Admin') return res.status(403).json({message:'Unauthorized Access'})
 
         if(!data) return res.status(400).json({message:'Add atleast one item'})
 
@@ -18,6 +23,12 @@ export const addItems = async (req,res) => {
 
 export const getItem  = async(req,res)=>{
     try{
+        const admin = req.admin;
+
+        const AdminRole = await Admin.findById(admin._id).role
+
+        if(AdminRole !== 'Admin') return res.status(403).json({message:'Unauthorized Access'})
+
         const data = await FoodItem.find().lean();
         return res.status(200).json(data)
 
@@ -28,6 +39,12 @@ export const getItem  = async(req,res)=>{
 
 export const deleteItem = async(req,res)=>{
     try{
+        const admin = req.admin;
+
+        const AdminRole = await Admin.findById(admin._id).role
+
+        if(AdminRole !== 'Admin') return res.status(403).json({message:'Unauthorized Access'})
+        
         const {id} = req.params;
         if(!id) return res.status(400).json({message:"Invalid item"})
         const result = await FoodItem.deleteOne({_id:id})
